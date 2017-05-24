@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Scraping With NY Times</title>
+    <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  
+  <style>
+      body { background-color: #C0C0C0 }
+      #wrapper {
+        width: 960px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 5%;
+      }
+      #articles {
+        display: inline-block;
+        overflow: auto;
+        width: 60%;
+        height: 700px;
+      }
+      #notes {
+        width: 30%;
+      }
+      textarea, input {
+        display: block;
+        width: 100%;
+        background-color: #FCF5C7;
+      }
+      input {
+        height: 36px;
+        font-size: 24px;
+      }
+      textarea {
+        height: 200px;
+        font-size: 18px;
+      }
+    </style>
+
+  </head>
+  <body>
+
+    <div id="wrapper">
+      <div class="jumbotron">
+      <center><h1>NY Times Scraps</h1></center>
+      <center><h2><i>News Stories will be placed on this page</i></h2></center>
+      <center><p><a class="btn btn-primary btn-lg" id="notes" role="button">Start Scrape</a></p>
+      <p><a class="btn btn-primary btn-lg" role="button">Delete</a></p></center>
+    </div>
+
+      <div id="articles"></div>
+    
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    
+    <script src="app.js"></script>
+  </body>
+</html>
